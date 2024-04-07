@@ -1,0 +1,119 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: auto;
+    padding: auto;
+}
+html{
+}
+
+body {
+    width: auto;
+    height: 4632px;
+    background-color: rgb(123, 153, 179);
+    font-family: "Istok Web", sans-serif;
+}
+
+header {
+    background-image: url(/Images/photo-1554050857-c84a8abdb5e2.jpg);
+    height: 1024px;
+    width: 1860px;
+}
+
+.navigation {
+    display: flex;
+    margin-right: 500px;
+    padding-top: 40px;
+}
+
+.header_bottom {
+    display: flex;
+}
+
+.MS {
+    font-family: "Kenia";
+    font-size: 150px;
+    font-weight: 400;
+}
+
+.header_bottom_text {
+    padding-top: 175px;
+    font-family: "Istok Web";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.79px;
+    text-align: left;
+}
+.finding{
+    background: rgba(213, 48, 5, 1);
+    height: 1024px;
+    width: 1860px;
+}
+#music{
+    padding-top: 100px;
+    padding-left: 135px;
+    font-weight: 100;
+    font-size: 50px;
+}
+.finding_buttons{
+    display: flex;;
+}
+.finding_button1{
+    margin-bottom: 80px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 63px;
+    border-radius: 1ic;
+    background-size: 200% auto;
+    background-image: radial-gradient(98.43% 2084.95% at 1.57% 7.83%, #8a3215 0%, #F3501A 100%);
+}
+.finding_button1:hover{
+    transition: background-position 1s;
+    background-position: 100% 0;
+}
+.finding_button2{
+    font-size: 63px;
+    border-radius: 1ic;
+    padding: 15px;
+    cursor: pointer;
+    cursor: pointer;
+    background-image: radial-gradient(98.43% 2084.95% at 1.57% 7.83%, #8a3215 0%, #F3501A 100%);
+    background-size: 200% auto;
+    animation: gradientAnimation 2.5s linear infinite;/*тут показывается что он будет длится 2.5 секи, и будет он это делать бесконечность*/
+}
+@keyframes gradientAnimation { /*тут кароче тупа треш, вот этот @keyframes это начальные позиции этого градиента, а он у нас линейный на лево*/
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.finding_button2:hover{
+    background-position: 100% 0;
+}
+
+
+
+.button{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, red, blue);
+    background-size: 200% auto;
+    transition: background-position 5s;
+}
+
+.button:hover {
+    background-position: 100% 0;
+}
