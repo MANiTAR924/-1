@@ -56,22 +56,61 @@ header {
     font-weight: 100;
     font-size: 50px;
 }
+
+
+
+
 .finding_buttons{
     display: flex;;
 }
+/* пример */
+
+/* .button{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, red, blue);
+    background-size: 200% auto;
+    transition: background-position 5s;
+}
+
+.button:hover {
+    background-position: 100% 0;
+} */
+
 .finding_button1{
     margin-bottom: 80px;
     padding: 15px;
     cursor: pointer;
     font-size: 63px;
     border-radius: 1ic;
-    background-size: 200% auto;
-    background-image: radial-gradient(98.43% 2084.95% at 1.57% 7.83%, #8a3215 0%, #F3501A 100%);
+    background-image: radial-gradient(98.43% 2084.95% at 1.57% 7.83%,#8a3215 0%, #F3501A 100% );
+    animation: test1 1s linear infinite;
 }
 .finding_button1:hover{
-    transition: background-position 1s;
-    background-position: 100% 0;
+    transition: background-position 2s ;
+    background-position: 0 100%;
+    background-size: 150% auto;
 }
+
+@keyframes test1 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .finding_button2{
     font-size: 63px;
     border-radius: 1ic;
